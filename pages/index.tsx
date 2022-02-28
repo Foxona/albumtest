@@ -178,7 +178,7 @@ export default function Album() {
   let offset = (currentPage - 1) * perPage;
 
   React.useEffect(() => {
-    fetch("http://jsonplaceholder.typicode.com/photos")
+    fetch("https://jsonplaceholder.typicode.com/photos")
       .then((v) => v.json())
       .then((data) => setImages(data));
   }, []);
